@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("../img/bg2.svg");
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 40px;
+}
+
+.container_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.container_menu a {
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    font-weight: bold;
+    font-size: 0.9em;
+
+}
+
+.container_menu a:hover {
+    color: white;
+}
+
+.container_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 130px 100px;
+    height: 400px;
+    color: white;
+    font-size: 2.5em;
+}
+
+.container_section p {
+    font-size: 0.5em;
+}
+
+.how_can_i_help {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 30px;
+}
+
+.container_services {
+    display: grid;
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container_services img {
+    width: 300px;
+}
+
+.container_services_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container_services_block p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.container_footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 40px 40px;
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+}
+
+.container_footer ul {
+    list-style: none;
+}
+
+.container_copy {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid white;
+}
+
+@media screen and (max-width: 768px) {
+    .container_section {
+        text-align: center;
+        margin: 0 0 130px;
+    }
+
+    .container_services {
+        grid-template-columns: 1fr;
+    }
+
+    .container_footer {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .container_copy {
+        font-size: 0.9em;
+    }
+}
+
+
